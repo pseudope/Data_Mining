@@ -1,4 +1,4 @@
-# Data_Mining
+# Data Mining Project
 
 ## Dataset
 https://www.kaggle.com/datasets/Cornell-University/arxiv
