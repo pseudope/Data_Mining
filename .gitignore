@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 /arxiv-metadata-oai-snapshot.json.zip
 /arxiv-metadata-oai-snapshot.csv
+/arxiv-metadata-oai-snapshot.json
