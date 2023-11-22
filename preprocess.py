@@ -29,6 +29,13 @@ def get_csv():
     # File path of the JSON file
     file_path = 'arxiv-metadata-oai-snapshot.json'
 
+    if not os.path.exists(file_path):
+        logging.error("Dataset not found. Please download the datset from https://www.kaggle.com/datasets/Cornell-University/arxiv "
+                      "and extract the zip directly in the root folder.")
+        exit()
+    else:
+        logging.info("The JSON already exists.")
+
     # Specify the columns to load
     columns_to_load = ['title', 'categories', 'abstract', 'versions']
 

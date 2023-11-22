@@ -1,5 +1,9 @@
 # Data_Mining
 
+## Dataset
+https://www.kaggle.com/datasets/Cornell-University/arxiv
+- extract json and run code
+
 ## Loging Levels
 
 ### DEBUG
