@@ -2,7 +2,7 @@
 
 ## Dataset
 https://www.kaggle.com/datasets/Cornell-University/arxiv
-- extract json and run code
+- extract json in root folder and run main
 
 ## Loging Levels
 
