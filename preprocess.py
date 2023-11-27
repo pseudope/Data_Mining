@@ -4,9 +4,10 @@ import re
 import logging
 import os
 from datetime import datetime
+from sys import exit
 
 # Function to parse each line and extract needed data
-def parse_line(line):
+def parse_line(line, columns_to_load):
     data = json.loads(line)
     return {col: data[col] for col in columns_to_load}
 
@@ -42,7 +43,7 @@ def get_csv():
     # Read the file line by line and parse JSON objects
     logging.debug("Read files from JSON.")
     with open(file_path, 'r') as file:
-        data = [parse_line(line) for line in file]
+        data = [parse_line(line, columns_to_load) for line in file]
 
     # Convert the list of dictionaries into a DataFrame
     logging.debug("Creating DataFrame.")
@@ -84,8 +85,3 @@ def get_data():
 
 def main():
     pass
-
-
-
-
-
